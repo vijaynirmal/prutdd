@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" name="Failed suite [ABN Automation Test Suite]" parallel="tests">
+  <parameter name="BrowserName" value="Android"/>
+  <parameter name="PlatformVersion" value="7.0"/>
+  <parameter name="AutomationName" value="Appium"/>
+  <parameter name="Maxtry" value="1"/>
+  <parameter name="CountReRun" value="1"/>
+  <parameter name="PathToElements" value="/resources/elements/"/>
+  <parameter name="AppName" value="Prudential"/>
+  <parameter name="AutoAcceptiOSAlerts" value="false"/>
+  <parameter name="WDAPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj"/>
+  <parameter name="DeviceCategory" value="Phone"/>
+  <parameter name="AppLoadingTime" value="5000"/>
+  <parameter name="iOSBundleID" value="null"/>
+  <parameter name="WaitForWaitTime" value="20"/>
+  <parameter name="PathToScreenshots" value="/screenshots/"/>
+  <parameter name="StartingOrientation" value="Portrait"/>
+  <parameter name="DebugProxyPort" value="9999"/>
+  <parameter name="MobileOS" value="Android"/>
+  <parameter name="DeviceID" value="fa406f2531988baca17b06cce1c139237b99c7d6"/>
+  <parameter name="BootStrapPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent"/>
+  <parameter name="AppURL" value="Latest"/>
+  <parameter name="PlatformName" value="Android"/>
+  <parameter name="IOSAutoScreenshotWait" value="5"/>
+  <parameter name="AndroidLaunchActivity" value="null"/>
+  <parameter name="PollingTime" value="500"/>
+  <parameter name="ServerCommandTimeout" value="60"/>
+  <parameter name="ApplicationTitle" value="ABN"/>
+  <parameter name="PathToAppPackage" value="D:\App\Prudential Insurance_v1.0.8_apkpure.com.apk"/>
+  <parameter name="DeviceName" value="ZW22246Z2F"/>
+  <listeners>
+    <listener class-name="listeners.SuiteListeners"/>
+    <listener class-name="listeners.TestListeners"/>
+  </listeners>
+  <test name="TestOne(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="Debug"/>
+        <exclude name="Broken"/>
+        <exclude name="Sensitive"/>
+        <exclude name="Unknown"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="androidTests.ReferenceAppAndroidTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="setupTest"/>
+          <include name="ReferenceAndroidAppTest"/>
+        </methods>
+      </class> <!-- androidTests.ReferenceAppAndroidTest -->
+    </classes>
+  </test> <!-- TestOne(failed) -->
+</suite> <!-- Failed suite [ABN Automation Test Suite] -->

@@ -1,0 +1,26 @@
+# Created on 2019-12-04T12:36:46.973
+java.lang.Error: Unresolved compilation problems: 
+	The import org.testng cannot be resolved
+	The import org.testng cannot be resolved
+	ISuiteListener cannot be resolved to a type
+	ISuite cannot be resolved to a type
+	ISuite cannot be resolved to a type
+
+	at listeners.SuiteListeners.<init>(SuiteListeners.java:3)
+	at java.lang.J9VMInternals.newInstanceImpl(Native Method)
+	at java.lang.Class.newInstance(Class.java:1847)
+	at org.testng.internal.ClassHelper.newInstance(ClassHelper.java:51)
+	at org.testng.TestNG.initializeConfiguration(TestNG.java:981)
+	at org.testng.TestNG.run(TestNG.java:1089)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+
+
+# Created on 2019-12-04T12:36:46.998
+System.exit() or native command error interrupted process checker.
+

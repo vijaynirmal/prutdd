@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Test Suite" duration-ms="66033" started-at="2019-12-05T06:30:30Z" finished-at="2019-12-05T06:31:36Z">
+    <groups>
+      <group name="Debug">
+        <method signature="ReferenceAppAndroidTest.ReferenceAndroidAppTest()[pri:0, instance:androidTests.ReferenceAppAndroidTest@bb938819]" name="ReferenceAndroidAppTest" class="androidTests.ReferenceAppAndroidTest"/>
+      </group> <!-- Debug -->
+    </groups>
+    <test name="TestOne" duration-ms="66033" started-at="2019-12-05T06:30:30Z" finished-at="2019-12-05T06:31:36Z">
+      <class name="androidTests.ReferenceAppAndroidTest">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:androidTests.ReferenceAppAndroidTest@bb938819]" name="initTest" is-config="true" duration-ms="301" started-at="2019-12-05T12:00:30Z" finished-at="2019-12-05T12:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:androidTests.ReferenceAppAndroidTest@bb938819]" name="setupTest" is-config="true" duration-ms="16" started-at="2019-12-05T12:00:31Z" finished-at="2019-12-05T12:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="ReferenceAndroidAppTest()[pri:0, instance:androidTests.ReferenceAppAndroidTest@bb938819]" name="ReferenceAndroidAppTest" duration-ms="65685" started-at="2019-12-05T12:00:31Z" description="Landing Page Test" finished-at="2019-12-05T12:01:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReferenceAndroidAppTest -->
+      </class> <!-- androidTests.ReferenceAppAndroidTest -->
+    </test> <!-- TestOne -->
+  </suite> <!-- Automation Test Suite -->
+</testng-results>

@@ -1,0 +1,70 @@
+<suite name="Automation Test Suite" parallel="tests" preserve-order="true" thread-count="2" configfailurepolicy="continue">
+
+ <!-- RUNTIME CONFIG -->
+    <parameter name="MobileOS" value="Android"/> <!-- Android, iOS, null -->
+    <parameter name="DeviceCategory" value="Phone"/> <!-- Phone, Tablet, null -->
+    <parameter name="DeviceName" value="ZW22246Z2F"/> <!-- android device name got from 'adb devices' in terminal ZW22246Z2F,Vijay Nirmal’s iPhone-->
+    <parameter name="BrowserName" value="Android"/> <!-- Chrome,Firefox -->
+    <parameter name="PlatformVersion" value="7.0"/> <!-- 7.0,12.2,etc -->
+    <parameter name="PlatformName" value="Android"/>
+    <parameter name="AppName" value="Prudential"/> <!-- Beacon,IDD -->
+    <parameter name="AutomationName" value="Appium"/> <!-- Appium,XCUITest -->
+    <parameter name="DeviceID" value="fa406f2531988baca17b06cce1c139237b99c7d6"/> <!-- null (default) -->
+    <parameter name="WDAPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj"/>
+    <parameter name="BootStrapPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent"/>
+    <parameter name="StartingOrientation" value="Portrait"></parameter> <!-- Portrait (default), Landscape -->
+    <parameter name="Maxtry" value="1"></parameter>
+    <parameter name="DebugProxyPort" value="9999"></parameter>
+    <parameter name="CountReRun" value="1"></parameter>
+
+   
+    <!-- APP CONFIG -->
+    <parameter name="AppURL" value="Latest"></parameter>
+    <parameter name="PathToAppPackage" value="D:\App\Prudential Insurance_v1.0.8_apkpure.com.apk"/>
+    <!-- /Users/sjvijay/Library/Developer/Xcode/DerivedData/ReferenceiOS-fwikikdjbubgnlfwenekregtttyc/Build/Products/Debug-iphoneos/ReferenceiOS.app , /Users/sjvijay/Desktop/app-debug.apk-->
+    <parameter name="AndroidLaunchActivity" value="null"/>
+    <parameter name="iOSBundleID" value="null"/>
+    <parameter name="AutoAcceptiOSAlerts" value="false"/>
+    <parameter name="ApplicationTitle" value="ABN"/>
+    <parameter name="PathToElements" value="/resources/elements/"/>
+    <parameter name="PathToScreenshots" value="/screenshots/"/>
+
+    
+    <!-- WEBDRIVER CONFIG -->
+    <parameter name="WaitForWaitTime" value="20"/> <!-- Seconds -->
+    <parameter name="PollingTime" value="500"/> <!-- Milliseconds -->
+    <parameter name="AppLoadingTime" value="5000"/>
+    <parameter name="IOSAutoScreenshotWait" value="5"/> <!-- Seconds -->
+    <parameter name="ServerCommandTimeout" value="60"/> <!-- Seconds < grid hub/node timeout -->
+
+    
+    <!-- REPORT CONFIG -->
+    <parameter name="PathToScreenshots" value="/screenshots/"/>
+  
+ <listeners>
+       <listener class-name="listeners.SuiteListeners"/>
+       <listener class-name="listeners.TestListeners"/>
+       
+  </listeners>
+  
+  
+  <tests>
+  <test name="TestOne">
+  
+  <groups>
+            <run>
+                <include name="Debug" />
+                <exclude name="Broken" />
+                <exclude name="Sensitive" />
+                <exclude name="Unknown"/>
+            </run>
+        </groups>
+        
+  <packages>
+  <package name="androidTests"/>
+  </packages>
+  </test>
+ 
+  
+  </tests>
+</suite> <!-- Suite -->

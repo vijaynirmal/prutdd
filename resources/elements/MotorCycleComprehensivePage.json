@@ -1,0 +1,64 @@
+{
+    "sumInsuredTxtBox":
+    {
+        "SimpleName": "Sum Insured Text Box",
+        "iOS":
+        {
+           
+                "AllDevices": "NA"
+            
+        },
+        "Android":
+        {
+            
+               "AllDevices": "AndroidUIAutomator::new UiSelector().resourceId(\"prologic.prudentialnsurance:id/price_of_vehicle\")"
+        }
+    },
+     "ccTxtBox":
+    {
+        "SimpleName": "Cubic Capacity Text Box",
+        "iOS":
+        {
+           
+                "AllDevices": "NA"
+            
+        },
+        "Android":
+        {
+            
+              "AllDevices": "AndroidUIAutomator::new UiSelector().resourceId(\"prologic.prudentialnsurance:id/cubic_capacity_of_vehicle\")"
+        }
+    },
+     "ageofMCTxtBox":
+    {
+        "SimpleName": "Age of Motor Cycle Text Box",
+        "iOS":
+        {
+           
+                "AllDevices": "NA"
+            
+        },
+        "Android":
+        {
+            
+              "AllDevices": "AndroidUIAutomator::new UiSelector().resourceId(\"prologic.prudentialnsurance:id/age_of_vehicle\")"
+        }
+    },
+     "calculateBtn":
+    {
+        "SimpleName": "Calculate Button",
+        "iOS":
+        {
+           
+                "AllDevices": "NA"
+            
+        },
+        "Android":
+        {
+            
+               "AllDevices": "AndroidUIAutomator::new UiSelector().text(\"CALCULATE\")"
+        }
+    }
+  
+  
+ }
