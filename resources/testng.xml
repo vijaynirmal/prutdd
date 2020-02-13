@@ -7,7 +7,7 @@
     <parameter name="BrowserName" value="Android"/> <!-- Chrome,Firefox -->
     <parameter name="PlatformVersion" value="7.0"/> <!-- 7.0,12.2,etc -->
     <parameter name="PlatformName" value="Android"/>
-    <parameter name="AppName" value="Prudential"/> <!-- Beacon,IDD -->
+    <parameter name="AppName" value="Prudential"/>
     <parameter name="AutomationName" value="Appium"/> <!-- Appium,XCUITest -->
     <parameter name="DeviceID" value="fa406f2531988baca17b06cce1c139237b99c7d6"/> <!-- null (default) -->
     <parameter name="WDAPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj"/>
